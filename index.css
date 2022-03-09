@@ -9,6 +9,7 @@ body {
 
 #Nosotros{
     background-image: url("assets/imagenes/RECUADRO_NOSOTROS.png");
+    background-size: cover;
 }
 
 #NosotrosStyle{
