@@ -20,6 +20,35 @@ body {
 
 #container2{
     background-image: url("assets/backgrounds/FONDO_PARTE_ABAJO.png");
+    padding-bottom: 10vh;
+}
+
+#Vision{
+    color: white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+#visionspan{
+    font-size: 28px;
+    margin-left: 21px;
+}
+
+#Mision{
+    color: white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+#misionspan{
+    font-size: 28px;
+    margin-left: 21px;
 }
 
 #container3{
