@@ -20,7 +20,69 @@ body {
 
 #container2{
     background-image: url("assets/backgrounds/FONDO_PARTE_ABAJO.png");
+    padding-bottom: 10vh;
 }
+
+#Vision{
+    color: white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+#visionspan{
+    font-size: 28px;
+    margin-left: 21px;
+}
+
+#Mision{
+    color: white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    margin: 30px;
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+#misionspan{
+    font-size: 28px;
+    margin-left: 21px;
+}
+
+#container3{
+    background-color: #000B28;
+    display: flex;
+    height: 15vh;
+}
+
+#Aviso{
+    font-size: 25px;
+    background-color: #0e6b6c;
+    color: white;
+    width: 100%;
+    height: 8vh;
+}
+
+#footer{
+    font-size: 25px;
+    color: white;
+    height: 8vh;
+    background-color: black;
+}
+
+#Fstyle{
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(19,24,30,0) 88%, rgba(255,255,255,0.7231267507002801) 100%);
+    padding-left: 100px;
+    padding-right: 100px;
+    border: none;
+    color: white;
+    text-decoration: solid;
+}
+
+
 
 .btn_inicio{
     background: rgb(0,0,0);
