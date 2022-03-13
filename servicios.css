@@ -1,26 +1,9 @@
-#servicios-top{
-    background-image: url("assets/backgrounds/top.png");
-    background-size: cover;
-}
 
-#servicios-bottom{
-    background-image: url("assets/backgrounds/bottom.png");
-    background-size: cover;
-}
 
 
 
 /*CARDS*/
-.bg-cards{
-    background: linear-gradient(to top, white 0%, white 55%, transparent 55%, transparent 100% ); 
-    border: 0;
-    text-align: center;
-    align-items: center;
-}
-.image-card{
-    width:250px; 
-    background-color: transparent;
-}
+
 
 #footer-img{
     background-image: url("assets/imagenes/AVISO_PRIVACIDAD.png");
