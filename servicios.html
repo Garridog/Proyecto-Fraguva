@@ -14,22 +14,25 @@
     <title>Fraguva</title>
 </head>
 <style>
+
  .navbar {
   background-color: transparent !important;
+  margin:0;
 }
 
 .nav-item{
   width: 9em;
   margin: 5px;
+  color: #fff;
 }
 
 .btn_inicio{
-    color: #fff;
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(255,255,255,1) 100%);
 }
     #servicios-top{
     background-image: url("assets/backgrounds/top.png");
     background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .servicios{
@@ -37,12 +40,12 @@
     margin-bottom: 20em;
     margin-top: 7em;
 }
-.titulo-servicio{
+/* .titulo-servicio{
     color:#fff;
     font-size: 4em;
     font-weight: 500;
     margin-bottom: 25px;
-}
+} */
 
 #list-services::before{
 	content: "";
@@ -57,11 +60,11 @@
     color: #fff;
     list-style:none;
 }
-.list-servicio{
+/* .list-servicio{
     padding: 10px 4px;
     font-size: 2em;
     font-weight: 400;
-}
+} */
 .medios-bordes{
     border-left: 3px solid #fff; border-bottom: 3px solid #fff;
 }
@@ -71,12 +74,18 @@
 #servicios-bottom{
     background-image: url("assets/backgrounds/bottom.png");
     background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
 }
 
 .puntos{
     padding: 2em;
     margin: 3em 2em 3em 2em;
     background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
+}
+
+.puntos-title{
+    font-size: 2em;
 }
 
 .experiencia{
@@ -129,11 +138,80 @@
     z-index: -1;
     
 }
+
+
+
+/*/ `xs` returns only a ruleset and no media query*/
+/* // ... { ... }
+ */
+/*/ `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .list-servicio{
+        padding: 5px 4px;
+    font-size: 1em;
+    font-weight: 400;
+    }
+    .titulo-servicio{
+        color:#fff;
+        font-size: 2em;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+    .puntos-title{
+    font-size: 0.7em;
+}
+.experiencia {
+    background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
+    padding: 2em 4em 3em 4em;
+    margin: 20em 0 2em 0;
+}
+.titulo {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
+.texto {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.resumen {
+    background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
+    padding: 1em 4em 1em 4em;
+    margin: 2em 0 2em 0;
+}
+.texto-r {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+img{
+    width: 100%;
+}
+.box {
+    margin-top: -20em;
+    z-index: 1;
+    margin-bottom: -23em;
+}
+ }
+
+/*/ `md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {  }
+
+/*/ `lg` applies to medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {  }
+
+/*/ `xl` applies to large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }
+
+/*/ `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {  }
 </style>
 <body>
     <div class="container-fluid">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="#">Start Bootstrap</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -152,87 +230,87 @@
                 </div>
             </nav>
         </header>
-        <div id="servicios-top">
-            <div class="row" >
-                <div class="col-7 col-sm-7 col-md-7 col-lg-7"></div>
-                <div class="col-5 col-sm-5 col-md-5 col-lg-5 servicios" >
-                    <h1 class="titulo-servicio">SERVICIOS</h1>
-                    <ul class="medios-bordes font-item" id="list-services">
-                        <li class="list-servicio">ADMINISTRACIÓN DE CONTRATOS PETROLEROS</li>
-                        <li class="list-servicio">PLANEACIÓN ESTRATÉGICA DE EMPRESAS</li>
-                        <li class="list-servicio">ADMINISTRACIÓN Y MEJORA DE PROCESOS</li>
-                        <li class="list-servicio">APOYO PARA LA EMISIÓN DE OPINIONES TÉCNICAS EN MATERIA PETROLERA</li>
-                        <li class="list-servicio">SEGUIMIENTO DE LAS ACTIVIDADES PETROLERAS</li>
-                        <li class="list-servicio">EVALUACIÓN DEL CUMPLIMIENTO CONTRACTUAL</li>
-                        <li class="list-servicio">CREACIÓN DE OPORTUNIDADES ESTRATÉGICAS PARA LA MEJORA DE NEGOCIOS</li>
-                        <li class="list-servicio">SOPORTE PARA LA ATENCIÓN AL CUMPLIMIENTO TÉCNICO-REGULATORIO DE EXPLORACIÓN Y EXTRACCIÓN</li>
-                        <li class="list-servicio">CUMPLIMIENTO EN LA ENTREGA DE INFORMACIÓN AL CNIH</li>
-                        <li class="list-servicio">CAPACITACIÓN DEL PERSONAL DE LAS EMPRESAS</li>
-                    </ul>
-                </div>
+       
+        <div class="row" id="servicios-top">
+            <div class="col-2 col-sm-7 col-md-7 col-lg-7"></div>
+            <div class="col-10 col-sm-5 col-md-5 col-lg-5 servicios" >
+                <h1 class="titulo-servicio">SERVICIOS</h1>
+                <ul class="medios-bordes font-item" id="list-services">
+                    <li class="list-servicio">ADMINISTRACIÓN DE CONTRATOS PETROLEROS</li>
+                    <li class="list-servicio">PLANEACIÓN ESTRATÉGICA DE EMPRESAS</li>
+                    <li class="list-servicio">ADMINISTRACIÓN Y MEJORA DE PROCESOS</li>
+                    <li class="list-servicio">APOYO PARA LA EMISIÓN DE OPINIONES TÉCNICAS EN MATERIA PETROLERA</li>
+                    <li class="list-servicio">SEGUIMIENTO DE LAS ACTIVIDADES PETROLERAS</li>
+                    <li class="list-servicio">EVALUACIÓN DEL CUMPLIMIENTO CONTRACTUAL</li>
+                    <li class="list-servicio">CREACIÓN DE OPORTUNIDADES ESTRATÉGICAS PARA LA MEJORA DE NEGOCIOS</li>
+                    <li class="list-servicio">SOPORTE PARA LA ATENCIÓN AL CUMPLIMIENTO TÉCNICO-REGULATORIO DE EXPLORACIÓN Y EXTRACCIÓN</li>
+                    <li class="list-servicio">CUMPLIMIENTO EN LA ENTREGA DE INFORMACIÓN AL CNIH</li>
+                    <li class="list-servicio">CAPACITACIÓN DEL PERSONAL DE LAS EMPRESAS</li>
+                </ul>
             </div>
         </div>
+        
         <div class="row justify-content-center box">
             <div class="col-10 col-sm-10 col-md-10 col-lg-10"  style="background: #fff;">
-                <div class="row d-flex justify-content-between text-center">
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 puntos" id="elaboracion">
-                        <h4 class="card-title"><strong>ELABORACIÓN y acompañamiento de la modificación del plan de desarrollo</strong></h4>
+                <div class="row d-flex justify-content-center text-center">
+                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 puntos" id="elaboracion">
+                        <h4 ><strong class="puntos-title">ELABORACIÓN y acompañamiento de la modificación del plan de desarrollo</strong></h4>
                     </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 puntos" id="evaluacion">
-                        <h4 class="card-title"><strong>7 EVALUACIONES de cumplimiento contractual</strong></h4>
+                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 puntos" id="evaluacion">
+                        <h4 ><strong class="puntos-title">7 EVALUACIONES de cumplimiento contractual</strong></h4>
                     </div>
-                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 puntos" id="asesoria">
-                        <h4 class="card-title"><strong>ASESORÍA en diversos temas estratégicos y regulatorios</strong></h4>
+                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 puntos" id="asesoria">
+                        <h4 ><strong class="puntos-title">ASESORÍA en diversos temas estratégicos y regulatorios</strong></h4>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="servicios-bottom" class="footer">
-            <div class="row justify-content-center">
-                <div class="col-10 col-sm-10 col-md-10 col-lg-10 text-center experiencia">
-                    <h2 class="titulo">NUESTRA EXPERIENCIA</h2>
-                    <p class="texto">Contamos con la experiencia en la elaboración y acompañamiento en la modificación del plan de desarrollo, así como la asesoría en diversos temas estratégicos y regulatorios.</p>
-                </div>
+
+        <div class="row justify-content-center footer" id="servicios-bottom" >
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 text-center experiencia">
+                <h2 class="titulo">NUESTRA EXPERIENCIA</h2>
+                <p class="texto">Contamos con la experiencia en la elaboración y acompañamiento en la modificación del plan de desarrollo, así como la asesoría en diversos temas estratégicos y regulatorios.</p>
             </div>
-            <div class="row carrusel  justify-content-center clientes" >
-                <div class="col-10 col-sm-10 col-md-10 col-lg-10">
-                    <!-- Set up your HTML -->
-                    <div class="owl-carousel" >
-                        <div> 
-                            <img src="assets/imagenes/cliente1.png" alt="">    
-                        </div>
-                        <div> 
-                            <img src="assets/imagenes/cliente2.png" alt="">    
-                        </div>
-                        <div>
-                            <img src="assets/imagenes/cliente3.png" alt="">    
-                        </div>
-                        <div> 
-                            <img src="assets/imagenes/cliente4.png" alt="">    
-                        </div>
+    
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 carrusel clientes">
+                <!-- Set up your HTML -->
+                <div class="owl-carousel" >
+                    <div> 
+                        <img src="assets/imagenes/cliente1.png" alt="">    
                     </div>
-                    <!--https://owlcarousel2.github.io/OwlCarousel2/-->
+                    <div> 
+                        <img src="assets/imagenes/cliente2.png" alt="">    
+                    </div>
+                    <div>
+                        <img src="assets/imagenes/cliente3.png" alt="">    
+                    </div>
+                    <div> 
+                        <img src="assets/imagenes/cliente4.png" alt="">    
+                    </div>
                 </div>
+                <!--https://owlcarousel2.github.io/OwlCarousel2/-->
             </div>
-            <div class="row justify-content-center text-center" >
-                <div class="col-10 col-sm-10 col-md-10 col-lg-10 resumen">
-                    <p class="texto-r">
-                        Apoyo en el Servicio Integral para Acompañamiento y Prospectiva en el Proceso de Fusión de las Empresas Públicas PETROAMAZONAS y PETROECUADOR; en el Ámbito Organizacional Estratégico.
-                    </p>
-                </div>
+        
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10 resumen">
+                <p class="texto-r text-center">
+                    Apoyo en el Servicio Integral para Acompañamiento y Prospectiva en el Proceso de Fusión de las Empresas Públicas PETROAMAZONAS y PETROECUADOR; en el Ámbito Organizacional Estratégico.
+                </p>
             </div>
-            <div class="d-flex justify-content-center clientes">
-                <div >
+        
+            <div class=" col-10 col-sm-10 col-md-10 col-lg-10 d-flex justify-content-center clientes">
+                <div>
                     <img src="assets/imagenes/cliente5.png" alt="">
                 </div>
                 <div >
                     <img src="assets/imagenes/cliente6.png" alt="">
                 </div>
             </div>
-        </div>
+        </div>     
+
+
         <footer>
             <div class="row justify-content-center" style="background-color: #008182;">
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                <div class="col-5 col-sm-4 col-md-4 col-lg-4 text-center">
                     <button class="aviso" data-bs-toggle="modal" data-bs-target="#myModal">AVISO DE PRIVACIDAD</button>
                 </div>
             </div>
@@ -278,26 +356,26 @@
         crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
-           $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:true,
-            loop:false
-        }
-    }
-});
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:2,
+                        nav:true
+                    },
+                    600:{
+                        items:2,
+                        nav:false
+                    },
+                    1000:{
+                        items:4,
+                        nav:true,
+                        loop:false
+                    }
+                }
+            });
 
         </script>
 </body>
