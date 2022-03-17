@@ -1,22 +1,32 @@
+@font-face {
+    font-family: Stem;
+    src: url(Stem-Bold.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
-  }
+    font-family: Stem;
+}
 
-#container1{
+#container1 {
     background-image: url("assets/backgrounds/FONDO_PARTE_ARRIBA.png");
 }
 
-.btn_inicio{
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(19,24,30,0) 71%, rgba(255,255,255,0.7231267507002801) 100%);
+.btn_inicio {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(19, 24, 30, 0) 71%, rgba(255, 255, 255, 0.7231267507002801) 100%);
 }
 
-#imgcenter{
-    width: 90%;
-    display: block; 
-    margin-left: auto; 
+#imgcenter {
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
+}
+
+#imgslogan {
+    max-width: 60%;
 }
 
 
@@ -25,51 +35,62 @@ body {
     background-size: cover;
 } */
 
-.style{
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(19,24,30,0) 71%, rgba(255,255,255,0.7231267507002801) 100%);
+.style {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(19, 24, 30, 0) 71%, rgba(255, 255, 255, 0.7231267507002801) 100%);
 }
 
-#container2{
+#container2 {
     background-image: url("assets/backgrounds/FONDO_PARTE_ABAJO.png");
     padding-bottom: 10vh;
 }
 
-#Vision{
+#titulovision {
+    font-size: 50px;
+    margin-left: 21px;
+}
+
+#Vision {
     color: white;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
     margin: 30px;
-    padding-bottom: 20px;
-    width: 70%;
+    width: 80%;
 }
 
-#visionspan{
+#visionspan {
     font-size: 28px;
     margin-left: 21px;
 }
 
-#Mision{
+#titulomision {
+    font-size: 50px;
+    margin-left: 21px;
+}
+
+#Mision {
     color: white;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
     margin: 30px;
-    padding-bottom: 20px;
-    width: 85%;
 }
 
-#misionspan{
+#misionspan {
     font-size: 28px;
     margin-left: 21px;
 }
 
-#container3{
+#container3 {
     background-color: #000B28;
     display: flex;
     height: 15vh;
 }
 
-#Aviso{
+.contacto {
+    font-size: 24px;
+}
+
+#Aviso {
     font-size: 25px;
     background-color: #0e6b6c;
     color: white;
@@ -77,19 +98,66 @@ body {
     height: 8vh;
 }
 
-#footer{
+#footer {
     font-size: 25px;
     color: white;
     height: 8vh;
     background-color: black;
 }
 
-#Fstyle{
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(19,24,30,0) 88%, rgba(255,255,255,0.7231267507002801) 100%);
+#Fstyle {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(19, 24, 30, 0) 88%, rgba(255, 255, 255, 0.7231267507002801) 100%);
     padding-left: 100px;
     padding-right: 100px;
     border: none;
     color: white;
     text-decoration: solid;
+}
+
+
+/* MEDIA QUERYS MOBILE */
+
+@media (max-width: 600px) {
+    #imgslogan {
+        max-width: 100%;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    #Fstyle {
+        font-size: 14px;
+    }
+
+    .contacto {
+        font-size: 16px;
+    }
+
+    #titulomision {
+        font-size: 30px;
+    }
+
+    #mision {
+        width: auto;
+    }
+
+    #vision {
+        width: auto;
+    }
+
+    #misionspan {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #titulovision {
+        font-size: 30px;
+    }
+
+    #visionspan {
+        font-size: 16px;
+        text-align: left;
+    }
 }
