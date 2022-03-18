@@ -23,7 +23,9 @@
     }
 
     .btn_inicio {
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(255, 255, 255, 1) 100%);
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(19, 24, 30, 0) 71%, rgba(255, 255, 255, 0.7231267507002801) 100%);
+    color: white;
     }
 </style>
 
@@ -43,10 +45,13 @@
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ms-auto text-center">
                                 <li class="nav-item active">
-                                    <a class="nav-link btn_inicio" href="#">Inicio</a>
+                                    <a class="nav-link btn_inicio" id="btnHeader" href="#">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link btn_inicio" href="#">Servicios</a>
+                                    <a class="nav-link btn_inicio" id="btnHeader" href="#">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn_inicio" id="btnHeader" href="#">Login</a>
                                 </li>
                             </ul>
                         </div>
