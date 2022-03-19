@@ -11,6 +11,8 @@ body {
 
 #container1 {
     background-image: url("assets/backgrounds/FONDO_PARTE_ARRIBA.png");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .btn_inicio {

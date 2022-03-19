@@ -22,30 +22,34 @@
 <body>
     <div class="imgbackground">
         <div class="container-fluid">
-            <header class="contenedor">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
-                    <div class="container">
-                        <a class="navbar-brand" href="#"><img src="assets/Logo/fraguva_oscuro.png"
-                                class="img-fluid ms-5 img-logo" style="max-width: 200px;" alt=""></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarResponsive">
-                            <ul class="navbar-nav ms-auto text-center">
-                                <li class="nav-item active">
-                                    <a class="nav-link btn_inicio" href="#">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link btn_inicio" href="#">Servicios</a>
-                                </li>
-                            </ul>
+            <div>
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+                        <div class="container">
+                            <a class="navbar-brand" href="#"><img src="assets/Logo/fraguva_oscuro.png"
+                                    class="img-fluid ms-5 img-logo" style="max-width: 200px;" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarResponsive">
+                                <ul class="navbar-nav ms-auto text-center">
+                                    <li class="nav-item active">
+                                        <a class="nav-link btn_inicio" id="btnHeader" href="#">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn_inicio" id="btnHeader" href="#">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn_inicio" id="btnHeader" href="#">Login</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </nav>
-            </header>
-
+                    </nav>
+                </header>
+            </div>
 
             <div class="container-fluid vh-100 text-center" style=" opacity: 80%;" >
                 <div class="" style="margin-top:200px">
@@ -73,13 +77,11 @@
                                             Recuerdame
                                         </label>
                                     </div> -->
-                                    <button class="btn btn-outline-dark text-center mt-2" type="submit" @click="iniciar">
+                                    <button class="btn btn-outline-secondary text-center mt-2" type="submit" @click="iniciar">
                                         Iniciar Sesión
                                     </button>
-                                    <p class="text-center mt-5">¿No tienes cuenta?
-                                        <span class="text-dark">Registrate</span>
+                                    <p class="text-center mt-5">¿Tienes problemas? comunicate con el administrador para acceder
                                     </p>
-                                    <p class="text-center text-dark">¿Olvidaste tu contraseña?</p>
                                 </div>
                             </form>
                         </div>
