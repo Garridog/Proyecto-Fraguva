@@ -32,7 +32,7 @@
     background-image: url("assets/backgrounds/FONDO_PARTE_ARRIBA.png");
     background-size:cover;
     background-repeat: no-repeat;
-    height: 156vh;
+    height: 160vh;
 }
 
 #servicios-bottom{
@@ -43,7 +43,7 @@
 }
 .img-slogan{
     margin-top: 45vh;
-    width: 50vw;
+    width: 45vw;
 
 }
 .cab-nosotros{
@@ -52,13 +52,14 @@
     background: linear-gradient(90deg, rgba(255,255,255,0.4) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0) 90%, rgba(255,255,255,0.4) 100%);
 }
 
-.cab-nosotros h1{
-    font-size: 30pt;
-    font-weight: 500;
+.titulos{
+    font-size: 40pt;
+    font-weight: 700;
+    padding: 8pt;
 }
-.cab-nosotros p{
-    font-size: 15pt;
-    font-weight: 500;
+.parrafos{
+    font-size: 17pt;
+    font-weight:600;
 }
 .puntos{
     z-index: 100;
@@ -72,6 +73,7 @@
 .misionvision{
     font-size: 28px;
     margin-left: 21px;
+    color: #fff;
 }
 
 .lineas{
@@ -81,6 +83,9 @@
     margin: 30px;
     padding-bottom: 20px;
     width: 70%;
+}
+.border-end{
+    border-right: 5px solid #000!important;
 }
 </style>
 <body>
@@ -113,37 +118,41 @@
                     <img src="assets/imagenes/SLOGAN.png" class="img-slogan ">
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 text-center" >
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 text-center" >
                 <div class="row d-flex justify-content-center ">
                     <div class="col-md-10 col-lg-10 col-xl-10 " style="background-color: #008182;">
                         <div class="row row d-flex justify-content-center">
-                            <div class="col-md-8 col-lg-8 col-xl-8 mt-2 cab-nosotros">
-                                <h1>NOSOTROS</h1>
-                                <p>Contamos con una amplia experiencia en la industria petrolera para proporcionar soporte estratégico, como regulatorio y técnico para la planeación de estrategias de identificación de oportunidades e incrementen la certidumbre de las empresas en el sector de Explotación y Extracción de Hidrocarburos</p>
+                            <div class="col-md-11 col-lg-11 col-xl-11 mt-4 cab-nosotros">
+                                <h1 class="titulos">NOSOTROS</h1>
+                                <p class="text-justify parrafos" style="    padding: 0 5vw;">Contamos con una amplia experiencia en la industria petrolera para proporcionar soporte estratégico, como regulatorio y técnico para la planeación de estrategias de identificación de oportunidades e incrementen la certidumbre de las empresas en el sector de Explotación y Extracción de Hidrocarburos</p>
                             </div>
                         </div>
-                        <div class="row text-center">
-                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos" id="elaboracion">
-                                <div>
-                                    <img src="assets/Icon/COMPROMISO.png" width="70%">
+                        <div class="row text-center d-flex justify-content-center ">
+                            <div class="col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center">
+                                <div class="row ">
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos">
+                                        <div>
+                                            <img src="assets/Icon/COMPROMISO.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos">
+                                        <div>
+                                            <img src="assets/Icon/CONFIANZA.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos">
+                                        <div>
+                                            <img src="assets/Icon/CERTEZA.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos">
+                                        <div>
+                                            <img src="assets/Icon/CAPACIDAD.png" class="img-fluid">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos" id="evaluacion">
-                                <div>
-                                    <img src="assets/Icon/CONFIANZA.png" width="70%">
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos" id="asesoria">
-                                <div>
-                                    <img src="assets/Icon/CERTEZA.png" width="70%">
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 puntos" id="asesoria">
-                                <div>
-                                    <img src="assets/Icon/CAPACIDAD.png" width="70%">
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-lg-12 col-xl-12" style="    background-color: #fff; height: 17vh; margin-top: -17vh;">&nbsp;</div>
+                            <div class="col-md-12 col-lg-12 col-xl-12" style="background-color: #fff; height: 17vh; margin-top: -17vh;">&nbsp;</div>
                         </div>
                     </div>
                 </div>
@@ -153,43 +162,44 @@
         
 
         <div class="row justify-content-center footer" id="servicios-bottom" >
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 text-center" >
+            <div class="col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 mt-5 text-center" >
                 <div class="row d-flex justify-content-center ">
-                    <div class="col-md-10 col-lg-10 col-xl-10 cab-nosotros" >
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-md-8 col-lg-8 col-xl-8 mt-2 ">
-                                <h1>NUESTROS CLIENTES</h1>
+                    <div class="col-md-10 col-lg-10 col-xl-10 cab-nosotros" style="    height: 15vh;">
+                        <div class="row d-flex justify-content-center" >
+                            <div class="col-md-8 col-lg-8 col-xl-8 mt-2 " >
+                                <h1 class="titulos">NUESTROS CLIENTES</h1>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-md-10 col-lg-10 col-xl-10 mt-2 ">
-                                    <div class="row align-middle" style="background-color: #fff; height: 15vh;">
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 border-end"> 
-                                            <img src="assets/imagenes/cliente1.png" class="clientes">    
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 border-end"> 
-                                            <img src="assets/imagenes/cliente2.png" class="clientes">    
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 border-end">
-                                            <img src="assets/imagenes/cliente3.png" class="clientes">    
-                                        </div>
-                                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"> 
-                                            <img src="assets/imagenes/cliente4.png" class="clientes">    
-                                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-11 col-lg-11 col-xl-11 " style="    margin-top: -8vh;">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-10 col-lg-10 col-xl-10 mt-2 ">
+                                <div class="row align-middle" style="background-color: #fff; height: 15vh;">
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 border-end"> 
+                                        <img src="assets/imagenes/cliente1.png" class="clientes">    
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 border-end"> 
+                                        <img src="assets/imagenes/cliente2.png" class="clientes">    
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 border-end">
+                                        <img src="assets/imagenes/cliente3.png" class="clientes">    
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"> 
+                                        <img src="assets/imagenes/cliente4.png" class="clientes">    
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5" >
-                    <div class="row d-flex justify-content-center lineas">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5" style="    margin-bottom: 15vh;">
+                    <div class="row d-flex justify-content-center lineas" style="margin-left: 5vw;">
                         <div class="col-md-12 col-lg-12 col-xl-12" >
                             <div class="row d-flex justify-content-start">
-                                <div class="col-md-8 col-lg-8 col-xl-8 mt-2 ">
-                                    <h1 style="margin-left: 21px; font-size: 50px; color: #fff;">NUESTRA VISIÓN</h1>
-                                    <p class="misionvision">Ser una firma recoconocida por la capacidad de generar las
+                                <div class="col-md-8 col-lg-8 col-xl-8 mt-5 mb-2">
+                                    <h1 style="margin-left: 21px; text-align: left; color: #fff;" class="titulos">NUESTRA VISIÓN</h1>
+                                    <p class="misionvision text-start parrafos">Ser una firma recoconocida por la capacidad de generar las
                                         oportunidades de negocios de las empresas dedicadas a la exporación y extracción de hidrocarburos.
                                     </p>
                                 </div>
@@ -197,13 +207,13 @@
                         </div>
                     </div> 
                 </div>       
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5" >
-                    <div class="row d-flex justify-content-center lineas">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5" style="    margin-bottom: 15vh;">
+                    <div class="row d-flex justify-content-center lineas" style="margin-left: 5vw;">
                         <div class="col-md-12 col-lg-12 col-xl-12" >
                             <div class="row d-flex justify-content-start">
-                                <div class="col-md-8 col-lg-8 col-xl-8 mt-2 ">
-                                    <h1 style="margin-left: 21px; font-size: 50px;">NUESTRA MISIÓN</h1>
-                                    <p class="misionvision">Proporcionar confianza y certeza a nuestros clientes, para que
+                                <div class="col-md-8 col-lg-8 col-xl-8 mt-5 mb-2">
+                                    <h1 style="margin-left: 21px; text-align: left;" class="titulos">NUESTRA MISIÓN</h1>
+                                    <p class="misionvision text-start parrafos">Proporcionar confianza y certeza a nuestros clientes, para que
                                         realicen las actividades petroleras dentro del marco regulatorio vigente, con
                                         el fin de maximizar el valor del negocio.
                                     </p>
@@ -218,8 +228,8 @@
         
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" style="background-color: #000B28; height: 15vh;">
                 <div class="row d-flex justify-content-center ">
-                    <h2 style="color: #1CDDE1;">SI NECESITA PONERSE EN COMUNICACIÓN CON NOSOTROS:</h2>
-                    <h2 style="color: white;">contacto@fraguvaenergy.com</h2>
+                    <h2 style="color: #1CDDE1; font-size: 35pt;">SI NECESITA PONERSE EN COMUNICACIÓN CON NOSOTROS:</h2>
+                    <h2 style="color: white; font-size: 38pt;">contacto@fraguvaenergy.com</h2>
                 </div>
             </div>
         
