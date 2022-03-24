@@ -6,8 +6,279 @@
     background-size: cover;
 }
 
-#btnHeader {
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #003260;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.btn_inicio {
     background: rgb(0, 0, 0);
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(19, 24, 30, 0) 71%, rgba(255, 255, 255, 0.7231267507002801) 100%);
-    color: white;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
 }
+
+.logo {
+    max-width: 150px;
+}
+
+.header {
+    display: flex;
+}
+
+#menu {
+    text-align: right;
+    width: 100%;
+    justify-content: end;
+}
+
+.imgEscritrio {
+    max-width: 80%;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.header {
+    display: flex;
+    background-color: #003260;
+}
+
+#menu {
+    text-align: right;
+    width: 100%;
+    justify-content: end;
+}
+
+
+#servicios-top {
+    background-image: url("assets/backgrounds/top.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#servicios-bottom {
+    background-image: url("assets/backgrounds/bottom.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    font-size: calc(1.525rem + 2.3vw);
+    font-weight: 700;
+}
+
+.texto {
+    font-size: calc(1.425rem + 1.1vw);
+    font-weight: 500;
+}
+
+.negro {
+    color: #000;
+}
+
+.blanco {
+    color: #fff;
+}
+
+.grad-puntos {
+    background: linear-gradient(90deg, rgba(0, 129, 130, 0.6) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(0, 129, 130, 0.6) 100%);
+}
+
+.rad-grad {
+    background: linear-gradient(90deg, rgba(0, 129, 130, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 129, 130, 1) 100%);
+}
+
+img {
+    width: 100%;
+}
+
+.grad-clientes {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.font-item {
+    list-style: none;
+}
+
+
+#Aviso {
+    font-size: 18px;
+    background-color: #0e6b6c;
+    color: white;
+    width: 100%;
+    height: 6vh;
+}
+
+#footer {
+    font-size: 10pt;
+    color: white;
+    height: 4vh;
+    background-color: black;
+}
+
+#Fstyle {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(19, 24, 30, 0) 88%, rgba(255, 255, 255, 0.7231267507002801) 100%);
+    padding-left: 100px;
+    padding-right: 100px;
+    border: none;
+    color: white;
+    text-decoration: solid;
+}
+
+.imgServicios{
+    max-width: 80%;
+}
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
+    .copyright {
+        font-size: 16px;
+    }
+
+    #Fstyle {
+        font-size: 14px;
+    }
+
+    .contacto {
+        font-size: 16px;
+    }
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .img-logo {
+        max-width: 200px;
+        width: 12vw;
+    }
+
+    .servicios {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 129, 130, 1) 45%);
+    }
+
+    .list-servicio {
+        /*letras de los servicios*/
+        padding: 4px 4px;
+    }
+
+    #list-services::before {
+        /*icono para movil sm*/
+        content: "";
+        display: block;
+        background: url(assets/imagenes/arrow-down-sm.png) no-repeat;
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-left: -3em;
+    }
+
+    .medios-bordes {
+        border-left: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+        padding-left: 0;
+    }
+
+    .serviciox {
+        position: relative;
+        width: 15vw;
+        margin-top: -30vh;
+    }
+
+    .puntos {
+        padding: 1em 1.5em;
+        height: 28vh;
+        margin: 2.5em 1.5em;
+        width: 24vw;
+    }
+
+    .experiencia {
+        padding: 2em 10em 2em 10em;
+        margin: 15em 0 2em 0;
+    }
+
+    .titulo {
+        font-size: calc(1.525rem + 3.3vw);
+        /*40pt;*/
+        font-weight: 700;
+    }
+
+    .texto {
+        font-size: 25pt;
+        font-weight: 500;
+    }
+
+    .puntos-text {
+        line-height: 22pt;
+        padding: 1em 2.5em;
+    }
+
+    .resumen {
+        padding: 1em 6em 1em 6em;
+        margin: 1em 0 1em 0;
+    }
+
+    .box {
+        margin-top: -11em;
+        z-index: 1;
+        margin-bottom: -11em;
+    }
+
+    .clientes {
+        padding: 2em 8em;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+
+    #Fstyle {
+        font-size: 14px;
+    }
+
+    .contacto {
+        font-size: 16px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
